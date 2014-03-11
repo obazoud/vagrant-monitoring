@@ -1,9 +1,14 @@
 DEPENDENCIES
   apt
+  collectd
+    git: https://github.com/coderanger/chef-collectd.git
+    revision: d34b21d8e42fba907c20080ed2a353aeb797be4c
   graphite
     git: https://github.com/hw-cookbooks/graphite.git
     revision: 54e2c91019ff67b43b82a1e654d9e82b4b28c0c4
     branch: master
+  monitoring
+    path: ./site-cookbooks/monitoring
 
 GRAPH
   apache2 (1.9.6)
@@ -12,6 +17,7 @@ GRAPH
     pacman (>= 0.0.0)
   apt (2.3.8)
   build-essential (1.4.4)
+  collectd (1.0.0)
   graphite (0.4.8)
     apache2 (>= 0.0.0)
     memcached (>= 0.0.0)
@@ -23,6 +29,10 @@ GRAPH
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  monitoring (0.1.0)
+    apt (>= 0.0.0)
+    collectd (>= 0.0.0)
+    graphite (>= 0.0.0)
   pacman (1.1.1)
   python (1.4.6)
     build-essential (>= 0.0.0)

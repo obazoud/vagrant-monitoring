@@ -37,11 +37,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     monitoring_server.vm.provision :chef_solo do |chef|
       #chef.log_level = :debug
+      chef.cookbooks_path = ["site-cookbooks","cookbooks"]
       chef.roles_path = "roles"
       chef.data_bags_path = "data_bags"
-      chef.cookbooks_path = [ "cookbooks", "site-cookbooks"]
-      chef.add_recipe "apt"
-      chef.add_recipe "graphite"
+      chef.provisioning_path = "/tmp/vagrant-chef"
+
+      chef.add_role "monitoring_server"
+
     end
 
   end
