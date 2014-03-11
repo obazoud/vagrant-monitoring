@@ -1,5 +1,7 @@
 DEPENDENCIES
   apt
+  base
+    path: ./site-cookbooks/base
   collectd
     git: https://github.com/coderanger/chef-collectd.git
     revision: d34b21d8e42fba907c20080ed2a353aeb797be4c
@@ -9,6 +11,15 @@ DEPENDENCIES
     branch: master
   monitoring
     path: ./site-cookbooks/monitoring
+  oh-my-zsh
+    git: https://github.com/hw-cookbooks/oh-my-zsh.git
+    revision: 05f9b6f7c3d4ab48ee3f434011f22781ad77bd96
+  solo-search
+    git: https://github.com/monigusto/chef-solo-search.git
+    revision: 39202490b547e156484fe099e62fcacad5aa3b5d
+  vim
+    git: https://github.com/opscode-cookbooks/vim.git
+    revision: 858a24f745d3f7e13daca5ba918861d31401e0bf
 
 GRAPH
   apache2 (1.9.6)
@@ -16,8 +27,22 @@ GRAPH
     logrotate (>= 0.0.0)
     pacman (>= 0.0.0)
   apt (2.3.8)
+  base (0.1.0)
+    chef-solo-search (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
+    vim (>= 0.0.0)
   build-essential (1.4.4)
+  chef-solo-search (0.5.1)
+  chef_handler (1.1.5)
   collectd (1.0.0)
+  dmg (2.2.0)
+  git (3.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
   graphite (0.4.8)
     apache2 (>= 0.0.0)
     memcached (>= 0.0.0)
@@ -33,6 +58,10 @@ GRAPH
     apt (>= 0.0.0)
     collectd (>= 0.0.0)
     graphite (>= 0.0.0)
+  oh-my-zsh (0.4.3)
+    git (>= 0.0.0)
+    users (>= 0.0.0)
+    zsh (>= 0.0.0)
   pacman (1.1.1)
   python (1.4.6)
     build-essential (>= 0.0.0)
@@ -41,6 +70,12 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  solo-search (0.4.0)
+  users (1.7.0)
+  vim (1.1.3)
+  windows (1.30.0)
+    chef_handler (>= 0.0.0)
   yum (3.1.2)
   yum-epel (0.3.4)
     yum (~> 3.0)
+  zsh (1.0.0)
