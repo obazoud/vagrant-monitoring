@@ -1,0 +1,36 @@
+DEPENDENCIES
+  apt
+  graphite
+    git: https://github.com/hw-cookbooks/graphite.git
+    revision: 54e2c91019ff67b43b82a1e654d9e82b4b28c0c4
+    branch: master
+
+GRAPH
+  apache2 (1.9.6)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  apt (2.3.8)
+  build-essential (1.4.4)
+  graphite (0.4.8)
+    apache2 (>= 0.0.0)
+    memcached (>= 0.0.0)
+    python (>= 0.0.0)
+    runit (~> 1.0)
+  iptables (0.12.0)
+  logrotate (1.5.0)
+  memcached (1.7.0)
+    runit (~> 1.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  pacman (1.1.1)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  yum (3.1.2)
+  yum-epel (0.3.4)
+    yum (~> 3.0)
