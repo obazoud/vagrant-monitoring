@@ -6,6 +6,8 @@ cookbook 'collectd', git: 'https://github.com/coderanger/chef-collectd.git'
 cookbook 'vim', git: 'https://github.com/opscode-cookbooks/vim.git'
 cookbook 'oh-my-zsh', git: 'https://github.com/hw-cookbooks/oh-my-zsh.git'
 cookbook 'solo-search', git: 'https://github.com/monigusto/chef-solo-search.git'
+cookbook 'ark',  git: 'git://github.com/opscode-cookbooks/ark.git'
+cookbook 'java', git: 'git://github.com/opscode-cookbooks/java.git'
 
 cookbook "base", path: "./site-cookbooks/base"
 cookbook "monitoring", path: "./site-cookbooks/monitoring"

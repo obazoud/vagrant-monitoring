@@ -9,3 +9,5 @@ version          '0.1.0'
 depends "apt"
 depends "graphite"
 depends "collectd"
+depends "java"
+depends "elasticsearch"

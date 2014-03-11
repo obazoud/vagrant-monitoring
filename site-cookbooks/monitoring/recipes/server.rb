@@ -35,3 +35,6 @@ collectd_plugin "write_graphite" do
   template "write_graphite.conf.erb"
   options node[:collectd][:write_graphite]
 end
+
+include_recipe "java"
+include_recipe "elasticsearch"
