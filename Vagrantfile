@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     monitoring_server.berkshelf.enabled = true
 
     monitoring_server.vm.provision :chef_solo do |chef|
-      chef.log_level = :debug
+      chef.log_level = :info
       chef.cookbooks_path = ["site-cookbooks","cookbooks"]
       chef.roles_path = "roles"
       chef.data_bags_path = "data_bags"
