@@ -5,4 +5,8 @@ run_list(
   "recipe[monitoring::server]"
 )
 default_attributes(
+  'python' => {
+    'setuptools_version' => '3.1',
+    'virtualenv_version' => '1.11.4'
+  }
 )

@@ -12,11 +12,17 @@ DEPENDENCIES
     git: https://github.com/hw-cookbooks/graphite.git
     revision: 54e2c91019ff67b43b82a1e654d9e82b4b28c0c4
     branch: master
+  graphitus
+    git: git://github.com/kisoku/graphitus-chef.git
+    revision: fa59f145d0a71f9bb1bdc39bd6cb47e5f7b7c757
   monitoring
     path: ./site-cookbooks/monitoring
   oh-my-zsh
     git: https://github.com/hw-cookbooks/oh-my-zsh.git
     revision: 05f9b6f7c3d4ab48ee3f434011f22781ad77bd96
+  poise
+    git: https://github.com/poise/poise.git
+    revision: 88170b94ca08a3cf3f9914ad7c27c7cb08878000
   solo-search
     git: https://github.com/monigusto/chef-solo-search.git
     revision: 39202490b547e156484fe099e62fcacad5aa3b5d
@@ -52,6 +58,9 @@ GRAPH
     memcached (>= 0.0.0)
     python (>= 0.0.0)
     runit (~> 1.0)
+  graphitus (0.1.0)
+    git (>= 0.0.0)
+    poise (>= 0.0.0)
   iptables (0.12.0)
   logrotate (1.5.0)
   memcached (1.7.0)
@@ -62,11 +71,13 @@ GRAPH
     apt (>= 0.0.0)
     collectd (>= 0.0.0)
     graphite (>= 0.0.0)
+    graphitus (>= 0.0.0)
   oh-my-zsh (0.4.3)
     git (>= 0.0.0)
     users (>= 0.0.0)
     zsh (>= 0.0.0)
   pacman (1.1.1)
+  poise (1.0.9)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
