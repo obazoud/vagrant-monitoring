@@ -9,6 +9,7 @@ cookbook 'solo-search', git: 'https://github.com/monigusto/chef-solo-search.git'
 cookbook 'ark',  git: 'git://github.com/opscode-cookbooks/ark.git'
 cookbook 'poise', git: 'https://github.com/poise/poise.git'
 cookbook 'graphitus', git: 'git://github.com/kisoku/graphitus-chef.git'
+cookbook 'grafana', git: 'git://github.com/dzautner/grafana-cookbook.git'
 
 cookbook "base", path: "./site-cookbooks/base"
 cookbook "monitoring", path: "./site-cookbooks/monitoring"

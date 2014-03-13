@@ -8,6 +8,9 @@ DEPENDENCIES
   collectd
     git: https://github.com/coderanger/chef-collectd.git
     revision: d34b21d8e42fba907c20080ed2a353aeb797be4c
+  grafana
+    git: git://github.com/dzautner/grafana-cookbook.git
+    revision: 101a3659d47a086c5152b4c0a80a619e82b1a74e
   graphite
     git: https://github.com/hw-cookbooks/graphite.git
     revision: 54e2c91019ff67b43b82a1e654d9e82b4b28c0c4
@@ -41,6 +44,8 @@ GRAPH
     chef-solo-search (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
     vim (>= 0.0.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
   build-essential (1.4.4)
   chef-solo-search (0.5.1)
   chef_handler (1.1.5)
@@ -53,6 +58,10 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  grafana (0.1.0)
+    apache2 (>= 0.0.0)
+    git (>= 0.0.0)
+    nginx (>= 0.0.0)
   graphite (0.4.8)
     apache2 (>= 0.0.0)
     memcached (>= 0.0.0)
@@ -70,17 +79,28 @@ GRAPH
   monitoring (0.1.0)
     apt (>= 0.0.0)
     collectd (>= 0.0.0)
+    grafana (>= 0.0.0)
     graphite (>= 0.0.0)
     graphitus (>= 0.0.0)
+  nginx (2.4.2)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 1.4)
+    ohai (~> 1.1)
+    runit (~> 1.2)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
   oh-my-zsh (0.4.3)
     git (>= 0.0.0)
     users (>= 0.0.0)
     zsh (>= 0.0.0)
+  ohai (1.1.12)
   pacman (1.1.1)
   poise (1.0.9)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  rsyslog (1.12.2)
   runit (1.5.10)
     build-essential (>= 0.0.0)
     yum (~> 3.0)

@@ -42,3 +42,5 @@ graphitus_dashboard 'example1' do
   tz 'UTC'
   data data
 end
+
+include_recipe "grafana::apache"
