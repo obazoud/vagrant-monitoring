@@ -6,7 +6,8 @@ include_recipe "monitoring::collectd_base"
 graphitus 'graphitus' do
   provider :apache
   ssl_enabled false
-  graphite_url 'http://127.0.0.1:8080'
+  hostname 'graphitus'
+  graphite_url 'http://graphite:8080'
   timezones [ 'UTC' ]
 end
 

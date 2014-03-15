@@ -11,5 +11,8 @@ default_attributes(
   },
   'graphitus' => {
     'hostname' => 'graphitus'
+  },
+  'grafana' => {
+    'graphite_url' => '"http://graphite:8080"'
   }
 )

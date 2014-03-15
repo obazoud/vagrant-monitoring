@@ -25,7 +25,7 @@ DEPENDENCIES
     revision: 05f9b6f7c3d4ab48ee3f434011f22781ad77bd96
   poise
     git: https://github.com/poise/poise.git
-    revision: 88170b94ca08a3cf3f9914ad7c27c7cb08878000
+    revision: 0e0b2aa19460d1411afba3fc6e76f81f59e7ea82
   solo-search
     git: https://github.com/monigusto/chef-solo-search.git
     revision: 39202490b547e156484fe099e62fcacad5aa3b5d
@@ -82,14 +82,13 @@ GRAPH
     grafana (>= 0.0.0)
     graphite (>= 0.0.0)
     graphitus (>= 0.0.0)
-  nginx (2.4.2)
+  nginx (2.4.4)
     apt (~> 2.2)
     bluepill (~> 2.3)
-    build-essential (~> 1.4)
+    build-essential (~> 2.0)
     ohai (~> 1.1)
     runit (~> 1.2)
-    yum (~> 3.0)
-    yum-epel (>= 0.0.0)
+    yum-epel (~> 0.3)
   oh-my-zsh (0.4.3)
     git (>= 0.0.0)
     users (>= 0.0.0)

@@ -31,8 +31,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     monitoring_server.ssh.forward_agent = true
     monitoring_server.vm.network :private_network, ip: "192.168.33.10", netmask: "255.255.255.0"
     monitoring_server.vm.network :forwarded_port, guest: 80, host: 8080, id: "graphite", auto_correct: false
-    monitoring_server.vm.network :forwarded_port, guest: 80, host: 8081, id: "graphitus", auto_correct: false
-    monitoring_server.vm.network :forwarded_port, guest: 80, host: 8082, id: "grafana", auto_correct: false
   
     monitoring_server.omnibus.chef_version = :latest
     monitoring_server.berkshelf.enabled = true
